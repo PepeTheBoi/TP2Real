@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">TP2=Text</string>
+    <string name="note">Note</string>
+    <string name="titre">Titre</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="blocNote">Le Bloc-Note</string>
+    <string name="application_cr_e_par">Application créée par</string>
+    <string name="version_beta">Version beta</string>
+    <string name="anthony_martin">Anthony Martin</string>
+    <string name="antoine_mascolo">Antoine Mascolo</string>
+    <string name="hans_olivier_fontaine">Hans-Olivier Fontaine</string>
+    <string name="bloc_note">Bloc note</string>
+    <string name="sans_titre">Sans titre</string>
+    <string name="faits_amusants">Faits amusants</string>
+    <string name="propos">À propos</string>
+    <string name="couleurs">Couleurs</string>
+    <string name="taille">Taille</string>
+    <string name="police">Police</string>
+    <string name="appliquer">Appliquer</string>
+    <string name="sp">sp</string>
 </resources>

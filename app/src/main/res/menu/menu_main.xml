@@ -9,5 +9,13 @@
         android:icon="@android:drawable/ic_menu_add"
         android:orderInCategory="0"
         app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_a_propos"
+        android:title="@string/propos"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_fun_facts"
+        android:title="@string/faits_amusants"
+        app:showAsAction="never"/>
 
 </menu>

@@ -3,9 +3,12 @@ package com.example.hansfontaine.tp2text;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -34,6 +37,25 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, NoteActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.action_a_propos:
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.a_propos, (ViewGroup)findViewById(R.id.customToast));
+                Toast toast = new Toast(getApplicationContext());
+
+                toast.setView(layout);
+                toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL, 0, 0);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.show();
+                break;
+            case R.id.action_fun_facts:
+                new android.app.AlertDialog.Builder(getApplicationContext())
+                        .setTitle("@string/faits_amusants !")
+                        .setMessage("Saviez-vous que cette section a ete cree dans le seul but " +
+                                "de faire plaisir a Alexandre.")
+                        .show();
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
         }
         return true;
     }
