@@ -22,6 +22,9 @@ public class NoteActivity extends AppCompatActivity {
     private Note NoteGeneree;
 
     @Override
+    /**
+     * Apparence initiale de l'application
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
@@ -74,11 +77,21 @@ public class NoteActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * layout du toolbar dans la note
+     * @param menu on envoie le menu main de note
+     * @return
+     */
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_note_new, menu);
         return true;
     }
 
+    /**
+     * selection des items dans un menu
+     * @param item item cliquable dans le menu
+     * @return retourne true
+     */
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
             case R.id.action_sauvegarder:
@@ -93,15 +106,23 @@ public class NoteActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * Suppression d'une note via la fonction Action.deleteNote
+     */
     private void deleteNote() {
         if(NoteGeneree == null){
             finish();
         }else{
             Actions.deleteNote(getApplicationContext(), NoteGeneree.getDateTime() + Actions.FILE_EXTENSION);
-            Toast.makeText(getApplicationContext(), "Note supprimée, vous pouvez retourner au menu principal", Toast.LENGTH_LONG).show();
+            finish();
+            Toast.makeText(getApplicationContext(), "Note supprimée!", Toast.LENGTH_LONG).show();
+
         }
     }
 
+    /**
+     * Sauvegarde d'un note via la fonction Action.deleteNote
+     */
     private void sauvegarderNote(){
         Note note;
         if(NoteGeneree == null){
@@ -117,6 +138,12 @@ public class NoteActivity extends AppCompatActivity {
         finish();
     }
 
+    /**
+     * Reception de options de la note
+     * @param requestCode code voulu par l'activité note
+     * @param resultCode code renvoyer par les settings
+     * @param data intent reçu de l'activité settings
+     */
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
 
         if (requestCode == 1){

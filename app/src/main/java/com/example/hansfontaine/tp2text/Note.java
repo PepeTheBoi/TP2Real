@@ -46,6 +46,11 @@ public class Note implements Serializable{
         return Contenu;
     }
 
+    /**
+     * pour recevoir notre moment de création plus facilement
+     * @param context envoi des données du téléphone pour trouver l'heure de création de la note
+     * @return le moment de création sous la forme de string
+     */
     public String getDateTimeEnString(Context context) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", context.getResources().getConfiguration().locale);
         sdf.setTimeZone(TimeZone.getDefault());

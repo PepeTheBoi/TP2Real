@@ -18,12 +18,21 @@ import java.util.ArrayList;
 public class NotesAdapter extends ArrayAdapter<Note>{
 
 
+    /**
+     * on fait hériter compètement la note de son parent, ArrayAdapter d'objet
+     * @param context héritage
+     * @param resource héritage
+     * @param objects héritage
+     */
     public NotesAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Note> objects) {
         super(context, resource, objects);
     }
 
     @NonNull
     @Override
+    /**
+     * layout de l'apparence d'une case de note dans le listview
+     */
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         //return super.getView(position, convertView, parent);
 

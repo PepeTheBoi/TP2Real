@@ -17,6 +17,9 @@ public class SettingActivity extends AppCompatActivity {
     private String font;
 
     @Override
+    /**
+     * setting pour modifier la couleur du texte de la note
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);

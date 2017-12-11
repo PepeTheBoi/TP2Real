@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/titre"
-        android:inputType="textCapWords|textMultiLine"
+        android:inputType="textCapWords|textPersonName"
         android:textCursorDrawable="@android:color/black"
         android:singleLine="true"
         android:textSize="24sp"
@@ -28,7 +28,7 @@
         android:ems="10"
         android:gravity="start"
         android:hint="@string/votre_note"
-        android:inputType="textCapSentences|textPersonName"
+        android:inputType="textCapSentences|textMultiLine"
         android:textCursorDrawable="@android:color/black"/>
 
     <LinearLayout
