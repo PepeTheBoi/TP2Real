@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TP2Text.iml" filepath="$PROJECT_DIR$/TP2Text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP2Real.iml" filepath="$PROJECT_DIR$/TP2Real.iml" />
+      <module fileurl="file://C:\Users\Antoine Mascolo\Documents\Cegep\LabProg\TP2Real\TP2Text.iml" filepath="C:\Users\Antoine Mascolo\Documents\Cegep\LabProg\TP2Real\TP2Text.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Antoine Mascolo\Documents\Cegep\LabProg\TP2Real\app\app.iml" filepath="C:\Users\Antoine Mascolo\Documents\Cegep\LabProg\TP2Real\app\app.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string-array name="spinnerSizeItems">
+        <item></item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>18</item>
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+        <string-array name="spinnerFontItems">
+            <item></item>
+            <item>Serif</item>
+            <item>Casual</item>
+            <item>Aclonica</item>
+            <item>Caesar Dressing</item>
+            <item>Homemade Apple</item>
+        </string-array>
+</resources>

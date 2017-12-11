@@ -50,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_fun_facts:
                 new android.app.AlertDialog.Builder(getApplicationContext())
                         .setTitle("@string/faits_amusants !")
-                        .setMessage("Saviez-vous que cette section a ete cree dans le seul but " +
-                                "de faire plaisir a Alexandre.")
+                        .setMessage("Saviez-vous que cette section a ete cree dans le seul but de faire plaisir a Alexandre.")
                         .show();
                 break;
             default:

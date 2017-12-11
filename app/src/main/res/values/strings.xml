@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TP2=Text</string>
+    <string name="app_name">Bloc-note</string>
     <string name="note">Note</string>
     <string name="titre">Titre</string>
     <string name="title_activity_main">MainActivity</string>
@@ -18,4 +18,8 @@
     <string name="police">Police</string>
     <string name="appliquer">Appliquer</string>
     <string name="sp">sp</string>
+    <string name="votre_note">Votre note...</string>
+    <string name="sauve">Note sauvegardée</string>
+    <string name="save_fail">Sauvegarde échouée</string>
+    <string name="couleur_changer">Couleur changé!</string>
 </resources>
